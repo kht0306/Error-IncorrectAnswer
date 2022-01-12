@@ -7,6 +7,6 @@ Sequence 생성시 초기 값'0'이라는 가정하에 다음값을 불러오는
 <b>SPRING 오류 관련</b><br>
 <b>오류명 : exception in thread "main" java.lang.unsupportedclassversionerror</b><br>
 <b>해결방법</b> jar파일을 통해 배포를 하려고 했는데 상기와 같은 오류가 발생했다....
-해결방법은 JDK와 JAVA버전이 안맞아서 나는 오류로 기존 설치된 자바 1.8을 삭제 후 JDK의 버전인 11버전으로 교체하니 다행이 무사히 배포가 성공!
+해결방법은 JDK와 JAVA버전이 안맞아서 나는 오류로 기존 설치된 자바 1.8을 삭제 후 JDK의 버전인 11버전으로 교체하니 다행이 무사히 배포 성공!
 
 
