@@ -10,3 +10,8 @@ Sequence 생성시 초기 값'0'이라는 가정하에 다음값을 불러오는
 해결방법은 JDK와 JAVA버전이 안맞아서 나는 오류로 기존 설치된 자바 1.8을 삭제 후 JDK의 버전인 11버전으로 교체하니 다행이 무사히 배포 성공!
 
 
+<b>SPRING BOOT MyBatis오류 관련</b><br>
+<b>오류명 : org.springframework.beans.factory.UnsatisfiedDependencyException</b><br>
+<b>해결방법</b> mapper xml파일에서 resultType타입을 제대로 맞추지 않아서 오류 난것으로 실제 매게변수로 받은 타입으로 제대로 수정하니 완성! 
+
+
