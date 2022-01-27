@@ -15,7 +15,6 @@ Sequence 생성시 초기 값'0'이라는 가정하에 다음값을 불러오는
 <b>해결방법</b> mapper xml파일에서 resultType타입을 제대로 맞추지 않아서 오류 난것으로 실제 매게변수로 받은 타입으로 제대로 수정하니 완성! 
 
 
-#{keyword, jdbcType=VARCHAR}
 <b>오류 일찍 해결해 버려서 오류명은....기억안남</b><br>
 <b>해결방법</b> mapper의 쿼리문에 매개변수를 바인딩 처리할 때 넣는 매겨변수가 null값일때 sql null관련 오류 발생할 때 #{파라미터명, jdbcType=VARCHAR}처럼
 jdbcType="파라미터 타입"을 입력하면 해결 가능
