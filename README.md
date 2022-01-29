@@ -18,3 +18,8 @@ Sequence 생성시 초기 값'0'이라는 가정하에 다음값을 불러오는
 <b>오류 일찍 해결해 버려서 오류명은....기억안남</b><br>
 <b>해결방법</b> mapper의 쿼리문에 매개변수를 바인딩 처리할 때 넣는 매겨변수가 null값일때 sql null관련 오류 발생할 때 #{파라미터명, jdbcType=VARCHAR}처럼
 jdbcType="파라미터 타입"을 입력하면 해결 가능
+
+<b>SPRING BOOT MyBatis오류 관련</b><br>
+<b>오류명 : SQL EXCEPTION : nested exception is org.apache.ibatis.type.TypeException: Could not set parameters for mapping: ParameterMapping{property='clntName', mode=IN, javaType=class java.lang.Object, jdbcType=VARCHAR, numericScale=null, resultMapId='null', jdbcTypeName='null', expression='null'}. Cause: org.apache.ibatis.type.TypeException: Error setting null for parameter #5 with JdbcType VARCHAR . Try setting a different JdbcType for this parameter or a different jdbcTypeForNull configuration property. Cause: java.sql.SQLException: 부적합한 열 인덱스 </b>
+<b>해결방법</b> 아직 해결 못함.....해결중 
+
