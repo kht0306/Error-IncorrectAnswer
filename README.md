@@ -21,7 +21,7 @@ jdbcType="파라미터 타입"을 입력하면 해결 가능
 
 <b>SPRING BOOT MyBatis 동적쿼리 관련 오류</b><br>
 <b>오류명 : SQL EXCEPTION : nested exception is org.apache.ibatis.type.TypeException: Could not set parameters for mapping: ParameterMapping{property='clntName', mode=IN, javaType=class java.lang.Object, jdbcType=VARCHAR, numericScale=null, resultMapId='null', jdbcTypeName='null', expression='null'}. Cause: org.apache.ibatis.type.TypeException: Error setting null for parameter #5 with JdbcType VARCHAR . Try setting a different JdbcType for this parameter or a different jdbcTypeForNull configuration property. Cause: java.sql.SQLException: 부적합한 열 인덱스 </b><br>
-<b>원인</b> 쿼리문에 특수문자가 들어 갈 수도 있겠다고 생각에 안전하게 CDATA[쿼리문]>을 통해 SQL를 작성했는데 저 안에 SQL문을 쓰면 동적쿼리를 위한 <if>문까지 쿼리문으로 인식하여
+<b>원인</b> 쿼리문에 특수문자가 들어 갈 수도 있겠다고 생각에 안전하게 CDATA[쿼리문]을 통해 SQL를 작성했는데 저 안에 SQL문을 쓰면 동적쿼리를 위한 <if>문까지 쿼리문으로 인식하여
 동적으로 처리가 불가능해졌음.....ㅎㅎ CDATA[쿼리문] 밖으로 if절을 꺼내니 이상없이 정상 기능이 됨
 
 
